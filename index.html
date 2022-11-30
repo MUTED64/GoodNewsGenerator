@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>喜报生成器</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>喜报生成器</header>
+    <main>
+      <form action="index.html" method="post">
+        <label for="content">内容</label>
+        <textarea
+          type="text"
+          name="content"
+          id="content"
+          height="100"
+          placeholder="CUDA out of memory"
+        ></textarea>
+        <label for="font-size">字体大小</label>
+        <input
+          type="range"
+          name="font-size"
+          id="font-size"
+          min="100"
+          max="500"
+          value="250"
+        />
+        <label for="font">字体</label>
+        <select name="font" id="font">
+          <option value="sans-serif">无衬线体</option>
+          <option value="serif">衬线体</option>
+          <option value="monospace">等宽</option>
+          <option value="other">手动填写本地字体</option>
+        </select>
+        <input type="text" id="manual-font" style="display: none" />
+        <div id="blank"></div>
+        <input type="submit" id="generate" value="生成" />
+      </form>
+      <canvas id="good-news-image"> 您的浏览器不支持canvas, 建议换用现代人爱用的浏览器捏 </canvas>
+    </main>
+    <footer>© 2022 MUTED64</footer>
+  </body>
+</html>

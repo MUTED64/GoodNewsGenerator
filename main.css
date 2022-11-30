@@ -1,0 +1,143 @@
+header {
+  font-size: 3em;
+  font-weight: bold;
+  background: #e5230a;
+  color: #ffff01;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 2;
+  text-align: center;
+}
+footer {
+  font-size: 1em;
+  background: #e5230a;
+  color: #ffff01;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 2;
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color: #ffff01;
+  background: #e5230a;
+  font-family: sans-serif;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+}
+form {
+  flex: 2;
+  padding: 2em;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 10%;
+}
+canvas {
+  flex: 1;
+  justify-self: flex-end;
+  max-width: 100%;
+  max-height: calc(100vh - 8em);
+  margin: 0;
+  left: auto;
+  right: auto;
+}
+textarea {
+  resize: none;
+  padding: 0.5em;
+  height: fit-content;
+  min-height: 7em;
+  background: #e5230a;
+  color: #ffff01;
+  border: #ffff01 1px solid;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+}
+textarea::placeholder {
+  color: #ffff01a0;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+  border: #ffff01 2px solid;
+}
+input {
+  padding: 0.5em;
+  background: #e5230a;
+  color: #ffff01;
+  border: #ffff01 1px solid;
+  border-radius: 0.5em;
+}
+select {
+  padding: 0.5em;
+  background: #e5230a;
+  color: #ffff01;
+  border: #ffff01 1px solid;
+  border-radius: 0.5em;
+}
+select option {
+  background: #e5230a;
+  color: #ffff01;
+}
+option {
+  background: #e5230a;
+  color: #ffff01;
+}
+label {
+  margin: 2em 0 0.5em 0;
+}
+#blank {
+  flex: 1;
+  margin: 1em;
+}
+#font-size {
+  appearance: unset;
+  background: #ffff0130;
+  padding: 0.3em;
+}
+#font-size::-webkit-slider-thumb {
+  appearance: none;
+  width: 3em;
+  height: 1.2em;
+  background: #ffff01;
+  border-radius: 0.3em;
+}
+#font-size::-moz-range-thumb {
+  appearance: none;
+  width: 3em;
+  height: 1.2em;
+  background: #ffff01;
+  border-radius: 0.3em;
+}
+#generate {
+  color: #ffff01;
+  background-color: #e5230a;
+  line-height: 2em;
+  border: #ffff01 1px solid;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+#manual-font {
+  margin-top: 1em;
+}
+#generate:hover {
+  color: #e5230a;
+  background-color: #ffff01c0;
+  box-shadow: #ffff01a0 0 0 1em 0.5em;
+}
